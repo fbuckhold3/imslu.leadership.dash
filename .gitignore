@@ -1,0 +1,19 @@
+# Secrets: tokens and the access code live in ~/.Renviron / Connect env vars only
+.Renviron
+.Renviron.local
+*.env
+
+# Data never goes in this (public) repo
+*.rds
+*.csv
+*.xlsx
+
+# R / renv / editor
+.Rproj.user/
+.Rhistory
+.RData
+renv/library/
+renv/staging/
+renv/local/
+.DS_Store
+rsconnect/

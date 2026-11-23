@@ -1,0 +1,37 @@
+/* imslu.leadership.dash — app-only layout on top of roundsui tokens. */
+
+.ld-topbar {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 16px; flex-wrap: wrap; padding: 20px 0 12px;
+}
+.ld-title { font-size: 1.5rem; font-weight: 600; margin: 0 0 2px; }
+.ld-muted { color: var(--roundsui-ink-muted, #5B6472); font-size: 0.875rem; }
+.ld-h4 { font-size: 0.95rem; font-weight: 600; margin: 4px 0 8px; }
+
+.ld-auth { max-width: 380px; margin: 12vh auto 0; }
+.ld-auth .btn { margin-top: 8px; }
+
+.ld-picker { padding-top: 16px; }
+
+.ld-kpi-row {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px; margin: 16px 0;
+}
+.ld-kpi {
+  background: var(--roundsui-surface, #fff);
+  border: 1px solid var(--roundsui-border, #E2E5EC);
+  border-radius: 8px; padding: 12px 14px;
+}
+.ld-kpi__value {
+  font-size: 1.5rem; font-weight: 600; line-height: 1.2;
+  color: var(--roundsui-ink, #13161F); font-variant-numeric: tabular-nums;
+}
+.ld-kpi__label { font-size: 0.8rem; font-weight: 600; color: var(--roundsui-ink-muted, #5B6472); margin-top: 2px; }
+.ld-kpi__sub { font-size: 0.75rem; color: var(--roundsui-ink-faint, #8991A0); margin-top: 2px; }
+.ld-kpi--danger .ld-kpi__value { color: var(--roundsui-danger, #D33A2C); }
+.ld-kpi--warning .ld-kpi__value { color: var(--roundsui-warning, #C2760A); }
+.ld-kpi--success .ld-kpi__value { color: var(--roundsui-success, #16A34A); }
+
+.roundsui-card { margin-bottom: 16px; }
+table.dataTable tbody tr { cursor: default; }
+#summary-residents table.dataTable tbody tr { cursor: pointer; }
